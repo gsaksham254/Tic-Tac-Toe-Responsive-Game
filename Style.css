@@ -1,0 +1,103 @@
+body{
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+    background-image:url(https://images.unsplash.com/photo-1698191373970-228c25ee6fd0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.New-game ,.reset{
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 0px 0px 10px 0px whitesmoke;
+    font-size:20px;
+    color:antiquewhite;
+    background-color: black;
+    margin-bottom: 20px;
+}   
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color:#f77f00;
+    box-shadow:whitesmoke 0px 0px 10px 0px;
+}
+.set{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 50px;
+}
+.set1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+}
+.active{
+    width:150px;
+    height:150px;
+    border:none;
+    margin:10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px black;
+    font-size: 70px;
+    color:#b0413e;
+}
+/* .reset{
+    margin-top:30px;
+    width:100px;
+    height:50px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size:20px;
+    color:black;
+    background-color:white;
+    transition: all 1s ease-in-out;
+} */
+.win{
+    background-color: black;
+    color:antiquewhite;
+    border:2px solid antiquewhite;
+    border-radius: 20px;
+    padding:20px;
+    cursor: pointer;
+}
+.win:hover{
+    transform: translate3d(0,-5px,0);
+}
+.hide{
+    display:none;
+}
+.draw{
+    background-color: black;
+    color:antiquewhite;
+    border:2px solid antiquewhite;
+    border-radius: 20px;
+    padding:20px;
+    cursor: pointer;
+}
+.draw:hover{
+    transform: translate3d(0,-5px,0);
+}
+button:focus{
+    outline:none;
+}
+
+/* Add transition effects to reset and new game buttons */
+.reset, .New-game {
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect for reset and new game buttons */
+.reset:hover, .New-game:hover {
+    transform: scale(1.05);
+}
+
+/* Add active effect for reset and new game buttons */
+.reset:active, .New-game:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
